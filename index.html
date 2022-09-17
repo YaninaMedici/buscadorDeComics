@@ -33,16 +33,45 @@
     </header>
 
 
-
+    <!-- seccion buscador y filtros -->
+    <section>
+        <form class="form">
+            <input type="text" required>
+            <label class="label-busqueda">
+                <span class="text-busqueda"> <i class="fa-solid fa-magnifying-glass"></i> Búsqueda</span>
+            </label>
+            <!-- ver como agregarlo desde JS ? -->
+            <!-- placeholder="Ingresá tu búsqueda" -->
+        </form>
+    </section>
+    <section class="d-flex justify-content-between m-3">
+        <div>
+            <label for="exampleDataList" class="form-label">TIPO</label>
+            <select class="form-select" aria-label="Default select example">
+                <option value="COMICS">COMICS</option>
+                <option value="PERSONAJES">PERSONAJES</option>
+            </select>
+        </div>
+        <div>
+            <label for="exampleDataList" class="form-label">ORDEN</label>
+            <select class="form-select" aria-label="Default select example">
+                <option value="A-Z">A-Z</option>
+                <option value="Z-A">Z-A</option>
+                <option value="Más nuevos">Más nuevos</option>
+                <option value="Más viejos">Más viejos</option>
+            </select>
+        </div>
+        <button type="button" class="btn btn-dark">BUSCAR</button>
+    </section>
 
     <!-- Footer -->
     <div class="container-fluid p-0">
         <footer class=" navbar container-footer">
             <div class="text-white d-flex align-self-center">
-                <a class="nav-link p-1" href="https://github.com/YaninaMedici">Yanina Medici
+                <a class="nav-link p-1" href="https://github.com/YaninaMedici" target="_blank">Yanina Medici
                     <i class="fa-brands fa-github i-style"> </i>
                 </a>
-                <a class="nav-link p-1" href="https://github.com/Belu-Sanchez">Belu Sanchez
+                <a class="nav-link p-1" href="https://github.com/Belu-Sanchez" target="_blank">Belu Sanchez
                     <i class="fa-brands fa-github i-style"></i>
                 </a>
             </div>
