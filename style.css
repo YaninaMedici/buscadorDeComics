@@ -1,3 +1,17 @@
+:root {
+    --color-primario: rgb(255, 0, 0);
+    --color-secuntario: rgb(0, 0, 0);
+    --color-acento: rgb(255, 255, 255);
+    --font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 /* --------------------------------------------------------------------- */
 /* ESTILADOS PARA PASAR A SASS!!! */
 /* --------------------------------------------------------------------- */
@@ -28,3 +42,22 @@
 /* --------------------------------------------------------------------- */
 /* FIN - ESTILADOS PARA PASAR A SASS!!! */
 /* --------------------------------------------------------------------- */
+
+/* FOOTER */
+.container-footer{
+background-color: var(--color-secuntario);
+font-family: var(--font-family);
+font-size: 1.5em;
+padding: 0px;
+display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+.nav-link{
+    margin-left: 1em;
+}
+.i-style{
+    color:var(--color-primario);
+    font-size: 1em;
+}
