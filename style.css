@@ -19,11 +19,18 @@
     font-size: 2.8em;
     padding-left: 10px;
     padding-right: 10px;
+    margin: 0;
 }
 
 .imagen-header{
     width: 100%;
     height: 100%;
+    /* display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6); */
 }
 /* --------------------------------------------------------------------- */
 /* FIN - ESTILADOS PARA PASAR A SASS!!! */
