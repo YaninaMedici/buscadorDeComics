@@ -33,25 +33,48 @@
     </header>
 
 
+    <!-- seccion buscador y filtros -->
+    <section class="d-flex bd-highlight m-3 section-buscador">
+        <form class="form">
+            <div class="text-busqueda fw-bold"> <i class="fa-solid fa-magnifying-glass"></i> BÚSQUEDA</div>
+            <input type="text" required>
+            <label class="label-busqueda">
+                <span class="placeholder-busqueda text-secondary"> Ingresá tu búsqueda </span>
+            </label>
+        </form>
+        <div class="p-2 bd-highlight">
+            <label for="exampleDataList" class="form-label fw-bold text-secondary">TIPO</label>
+            <select class="form-select fw-bold" aria-label="Default select example">
+                <option value="COMICS">COMICS</option>
+                <option value="PERSONAJES">PERSONAJES</option>
+            </select>
+        </div>
+        <div class="p-2 bd-highlight">
+            <label for="exampleDataList" class="form-label fw-bold text-secondary">ORDEN</label>
+            <select class="form-select fw-bold" aria-label="Default select example">
+                <option value="A-Z">A-Z</option>
+                <option value="Z-A">Z-A</option>
+                <option value="Más nuevos">Más nuevos</option>
+                <option value="Más viejos">Más viejos</option>
+            </select>
+        </div>
+        <button type="button" class="btn btn-dark ms-auto p-2 bd-highlight">BUSCAR</button>
+    </section>
 
 
     <!-- Footer -->
     <div class="container-fluid p-0">
         <footer class=" navbar container-footer">
             <div class="text-white d-flex align-self-center">
-                <a class="nav-link p-1" href="https://github.com/YaninaMedici">Yanina Medici
+                <a class="nav-link p-1" href="https://github.com/YaninaMedici" target="_blank">Yanina Medici
                     <i class="fa-brands fa-github i-style"> </i>
                 </a>
-                <a class="nav-link p-1" href="https://github.com/Belu-Sanchez">Belu Sanchez
+                <a class="nav-link p-1" href="https://github.com/Belu-Sanchez" target="_blank">Belu Sanchez
                     <i class="fa-brands fa-github i-style"></i>
                 </a>
             </div>
         </footer>
     </div>
-
-
-
-
 
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
