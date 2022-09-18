@@ -2,7 +2,7 @@
     --color-primario: rgb(255, 0, 0);
     --color-secuntario: rgb(0, 0, 0);
     --color-acento: rgb(255, 255, 255);
-    --font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    --font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 }
 
@@ -17,7 +17,7 @@
 /* --------------------------------------------------------------------- */
 
 /* HEADER */
-.container-header{
+.container-header {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -26,17 +26,19 @@
     /* padding: 0; */
 }
 
-.logo{
-    background-color: red; /* verificar el color en la documentacion */
+.logo {
+    background-color: red;
+    /* verificar el color en la documentacion */
     color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* font-family: 'Bangers', cursive; */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-family: 'Bangers', cursive; */
     font-size: 2.8em;
     padding-left: 10px;
     padding-right: 10px;
     margin: 0;
 }
 
-.imagen-header{
+.imagen-header {
     width: 100%;
     height: 100%;
     /* display: block;
@@ -46,32 +48,35 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.6); */
 }
+
 /* --------------------------------------------------------------------- */
 /* FIN - ESTILADOS PARA PASAR A SASS!!! */
 /* --------------------------------------------------------------------- */
 
 /* FOOTER */
-.container-footer{
-background-color: var(--color-secuntario);
-font-family: var(--font-family);
-font-size: 1.5em;
-padding: 0px;
-display: flex;
-text-align: center;
-align-items: center;
-justify-content: center;
+.container-footer {
+    background-color: var(--color-secuntario);
+    font-family: var(--font-family);
+    font-size: 1.5em;
+    padding: 0px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
-.nav-link{
+
+.nav-link {
     margin-left: 1em;
 }
-.i-style{
-    color:var(--color-primario);
+
+.i-style {
+    color: var(--color-primario);
     font-size: 1em;
 }
 
 /* BUSCADOR */
 
-.form{
+.form {
     width: 100%;
     height: 50px;
     max-width: 400px;
@@ -80,7 +85,8 @@ justify-content: center;
     margin: 1em;
 
 }
-.form input{
+
+.form input {
     width: 100%;
     height: 100%;
     background: none;
@@ -89,16 +95,19 @@ justify-content: center;
     border: none;
     outline: 0px;
 }
-.form .label-busqueda{
+
+.form .label-busqueda {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
     pointer-events: none;
-    border-bottom: 1px solid var(--color-primario);;
+    border-bottom: 1px solid var(--color-primario);
+    ;
 }
-.form .label-busqueda:after{
+
+.form .label-busqueda:after {
     content: '';
     position: absolute;
     left: 0;
@@ -109,20 +118,64 @@ justify-content: center;
     transform: translateX(-100%);
     transition: all 0.3s ease;
 }
-.text-busqueda{
+
+.text-busqueda {
     position: absolute;
-    bottom: 3px;
     left: 0;
     transition: all 0.3s ease;
     color: var(--color-primario);
 }
 
-.form input:focus + .label-busqueda .text-busqueda,.form input:valid + .label-busqueda .text-busqueda{
+.form input:focus+.label-busqueda .text-busqueda,
+.form input:valid+.label-busqueda .text-busqueda {
     transform: translateY(-150%);
     font-size: 14px;
     color: var(--color-secuntario);
 
 }
-.form input:focus + .label-busqueda:after, .form input:valid + .label-busqueda:after{
+
+.form input:focus+.label-busqueda:after,
+.form input:valid+.label-busqueda:after {
     transform: translateX(0%);
+}
+
+.placeholder-busqueda {
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.form input:focus+.label-busqueda .placeholder-busqueda,
+.form input:valid+.label-busqueda .placeholder-busqueda {
+    transform: translateY(250%);
+    font-size: 14px;
+    color: var(--color-secuntario);
+
+}
+
+/* Media section buscador */
+@media (min-width:480px) and (max-width:819px) {
+    .form {
+        max-width: 800px;
+    }
+
+    .section-buscador {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-grow: 1;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width:200px) and (max-width:479px) {
+    .form {
+        max-width: 800px;
+    }
+
+    .section-buscador {
+        display: flex;
+        flex-direction: column;
+    }
 }
