@@ -22,6 +22,33 @@ getData();
 const printData = json => {
     // const array = json; // BELUUUUU LO TENIAS ASI (= json.data.results) PROBE CON (=json) PERO NO FUNCIONA - LO DEJO COMENTADO 
     const array = json.data.results;
+
+// <!-- Paginador -->
+
+// ENTRA EN LA API
+
+let pagina = 1;
+
+const getPage = async () => {
+    const url = `https://gateway.marvel.com/v1/public/comics?offset=${pagina}&apikey=${apiPublic}`;
+    const resp = await fetch(url)
+    // console.log(url)
+    const json = await resp.json()
+    printData(json.results)
+    console.log(json)
+    return json;
+}
+
+getPage();
+
+
+
+
+
+//PINTA LAS CARDS
+const printData = json => {
+    const array = json;
+    // const array = json.data.results; // BELUUUUU LO TENIAS ASI - LO DEJO COMENTADO
     let card = '';
     array.forEach(comics => { 
       const {images, title} = comics
@@ -40,6 +67,7 @@ const printData = json => {
     });
 
 };
+
 
 
 
@@ -77,3 +105,5 @@ const getPage = async () => {
 }
 
 getPage();
+
+
