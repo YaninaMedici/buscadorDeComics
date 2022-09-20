@@ -59,10 +59,19 @@
             </select>
         </div>
         <button type="button" class="btn btn-dark ms-auto p-2 bd-highlight">BUSCAR</button>
+     
     </section>
 
-    <!-- cards -->
+    <!-- RESULTADOS -->
 
+    <div class="m-3 bd-highlight">
+        <h3>Resultados</h3>
+        <div class="fw-bold text-secondary">
+             <span id="comics-resultados"></span><p> RESULTADOS </p>
+        </div>     
+    </div>
+
+    <!-- cards -->
     <div id="cards">
     </div>
 
@@ -72,7 +81,7 @@
     <div>
         <div>
             <div class="d-flex justify-content-center">
-                <p>Página actual: <span id="pagina-actual"></span></p> 
+                <p>Página actual: <span id="pagina-actual"></span></p>
             </div>
             <div class="d-flex justify-content-center">
                 <p>Total de páginas: <span id="total-paginas"></span></p>
@@ -80,37 +89,43 @@
         </div>
         <div aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
-                <li class="page-item disabled"><a class="page-link text-bg-dark p-3"><<</a></li>
-                <li class="page-item"><a class="page-link text-bg-dark p-3" href="#"><</a></li>
-                <li class="page-item"><a class="page-link text-bg-dark p-3" href="#">></a></li>
-                <li class="page-item"><a class="page-link text-bg-dark p-3" href="#">>></a></li>
+                <li class="page-item"><a class="page-link text-bg-dark text-white p-3" href="#" id="first-page">
+                        <<</a>
+                </li>
+                <li class="page-item"><a class="page-link text-bg-dark text-white p-3" href="#" id="previus-page">
+                        <</a>
+                </li>
+                <li class="page-item"><a class="page-link text-bg-dark text-white p-3" href="#" id="next-page">></a>
+                </li>
+                <li class="page-item"><a class="page-link text-bg-dark text-white p-3" href="#" id="last-page">>></a>
+                </li>
             </ul>
         </div>
-        
 
-    <!-- Footer -->
-    <div class="container-fluid p-0">
-        <footer class=" navbar container-footer">
-            <div class="text-white d-flex align-self-center">
-                <a class="nav-link p-1" href="https://github.com/YaninaMedici" target="_blank">Yanina Medici
-                    <i class="fa-brands fa-github i-style"> </i>
-                </a>
-                <a class="nav-link p-1" href="https://github.com/Belu-Sanchez" target="_blank">Belu Sanchez
-                    <i class="fa-brands fa-github i-style"></i>
-                </a>
-            </div>
-        </footer>
-    </div>
 
-    <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-        crossorigin="anonymous"></script>
+        <!-- Footer -->
+        <div class="container-fluid p-0">
+            <footer class=" navbar container-footer">
+                <div class="text-white d-flex align-self-center">
+                    <a class="nav-link p-1" href="https://github.com/YaninaMedici" target="_blank">Yanina Medici
+                        <i class="fa-brands fa-github i-style"> </i>
+                    </a>
+                    <a class="nav-link p-1" href="https://github.com/Belu-Sanchez" target="_blank">Belu Sanchez
+                        <i class="fa-brands fa-github i-style"></i>
+                    </a>
+                </div>
+            </footer>
+        </div>
 
-    <script src="./app.js"></script>
+        <!-- bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+            crossorigin="anonymous"></script>
+
+        <script src="./app.js"></script>
 </body>
 
 </html>
