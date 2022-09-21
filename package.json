@@ -1,0 +1,23 @@
+{
+  "name": "buscadordecomics",
+  "version": "1.0.0",
+  "description": "Buscador de cómics - MARVEL",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YaninaMedici/buscadorDeComics.git"
+  },
+  "author": "Belén Sánchez - Yanina Medici",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YaninaMedici/buscadorDeComics/issues"
+  },
+  "homepage": "https://github.com/YaninaMedici/buscadorDeComics#readme",
+  "dependencies": {
+    "sass": "^1.54.9"
+  }
+}
