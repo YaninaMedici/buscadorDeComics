@@ -49,55 +49,26 @@ const printData = (json) => {
 
     }
    }
-     card += `   
-            <div class="card mt-5 m-2 d-inline-flex" style="width: 17rem;">
-                <img src="${thumbnail.path}.${thumbnail.extension}" class="card-img-top img-style" alt="..." data-id="${id}">
-                <div class="card-body fw-bold py-2" style="height: 7rem;">
-                    <p>${title}</p>
-                </div>
-            </div>`
+     card += `  
+            <ul class="grid cs-style-2">
+            <li>
+                <figure>
+                    <img src="${thumbnail.path}/portrait_uncanny.${thumbnail.extension}" alt="img02">
+                    <figcaption>
+                        <h3>${title}</h3>
+                    </figcaption>
+                </figure>
+            </li>
+    
+        </ul>
+            
+            `
             
           document.getElementById('cards').innerHTML = card
 
     });
 
 };
-
-
-// <!-- Paginador -->
-
-// ENTRA EN LA API
-
-// let pagina = 1;
-
-// const getPage = async () => {
-//     EL CATCH TIRA ERROR!!!
-//     const url = `https://gateway.marvel.com/v1/public/comics?offset=${pagina}&apikey=${apiPublic}`;
-//     fetch(url) 
-//         .then(resp => resp.json())
-//         .then(json => {
-//             printData(json.results)
-//             data = json;
-//         })
-//         .catch(err => console.error(err))
-//     ---------------------------------------------
-//     ESTO FUNCIONA Y SE VE LA apiPrivate, PERO NO CAMBIA DE PAGINA Y MUESTRA MAS DE 20
-//     const url = `https://gateway.marvel.com/v1/public/comics?offset=${pagina}&apikey=${apiPublic}`;
-//     const resp = await fetch(url)
-//     console.log(resp)
-//     ---------------------------------------------
-//     ESTE NO FUNCIONA ENTRA EN CONFLICTO CON PRINTDATA Y GETDATA!!!
-//     const url = `https://gateway.marvel.com/v1/public/comics?offset=${pagina}&apikey=${apiPublic}`;
-//     const resp = await fetch(url)
-//     // console.log(resp)
-//     // console.log(url)
-//     const json = await resp.json()
-//     printData(json.results)
-//     console.log(json)
-//     return json;
-// }
-
-// getPage();
 
 
 
