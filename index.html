@@ -50,11 +50,13 @@
         </div>
         <div class="p-2 bd-highlight">
             <label for="exampleDataList" class="form-label fw-bold text-secondary">ORDEN</label>
-            <select class="form-select fw-bold" aria-label="Default select example">
-                <option value="A-Z">A-Z</option>
-                <option value="Z-A">Z-A</option>
-                <option value="Más nuevos">Más nuevos</option>
-                <option value="Más viejos">Más viejos</option>
+            <select id="filtro-ordenar" class="form-select fw-bold" aria-label="Default select example">
+                <!-- <option value="name" class="personajes-opcion">A-Z</option>
+                <option value="-name" class="personajes-opcion">Z-A</option> -->
+                <option value="title" class="comic-opcion">A-Z</option>
+                <option value="-title" class="comic-opcion">Z-A</option>
+                <option value="-onsaleDate" class="comic-opcion">Más nuevos</option>
+                <option value="onsaleDate" class="comic-opcion">Más viejos</option>
             </select>
         </div>
         <button type="button" class="btn btn-dark ms-auto p-2 bd-highlight">BUSCAR</button>
@@ -70,10 +72,12 @@
         </div>     
     </div>
 
-    <!-- cards -->
-    <div id="cards">
+    <!-- card -->
+    <div id="card">
     </div>
-
+    <!-- card-comic-detalle-->
+    <div id="detalle-comic">
+    </div>
 
     <!-- Paginador -->
 
